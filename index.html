@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MTJ Welding &amp; Fabrication — Salt Lake City</title>
+<meta name="description" content="MTJ Welding &amp; Fabrication — firefighter-owned Salt Lake City steel shop. Custom handrails, gates, and fabrication. Mobile welding repair. LiftMaster gate operators sold &amp; installed." />
+<meta name="theme-color" content="#0a0a0a" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="MTJ Welding & Fabrication" />
+<meta property="og:description" content="Firefighter-owned steel fabrication, mobile welding, and LiftMaster gate operator install — Salt Lake City." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.mtjwelding.com/" />
+<meta property="og:image" content="images/IMG_8857.jpg" />
+
+<!-- Favicon (SVG, falls back to nothing in older browsers) -->
+<link rel="icon" type="image/svg+xml" href="images/logo-icon.svg" />
+
+<!-- Fonts: Archivo Black (display) + Inter (body) — matches logo's heavy geometric sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================================================
+   MTJ Welding & Fabrication — Industrial Modern
+   Pure black, paper white, single ember accent.
+   Bold geometric type, thick rules, generous whitespace.
+   ============================================================ */
+:root{
+  --ink:        #0a0a0a;
+  --paper:      #ffffff;
+  --bone:       #f4f2ed;        /* warm off-white surface */
+  --steel:      #525252;        /* secondary text */
+  --hairline:   #e6e3dd;        /* very light divider */
+  --ember:      #ff4a1f;        /* CTA accent — used sparingly */
+  --ember-dk:   #d83a13;
+  --display:    "Archivo Black", "Inter", system-ui, -apple-system, sans-serif;
+  --body:       "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--body);
+  font-size:16px;line-height:1.55;
+  color:var(--ink);background:var(--paper);
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+
+/* Type */
+h1,h2,h3,h4,h5{font-family:var(--display);font-weight:900;line-height:1;letter-spacing:-.02em;text-transform:uppercase}
+h1{font-size:clamp(2.6rem, 7vw, 5.5rem)}
+h2{font-size:clamp(2rem, 4.5vw, 3.6rem)}
+h3{font-size:clamp(1.3rem, 2.2vw, 1.7rem);letter-spacing:-.01em}
+h4{font-size:1.1rem;letter-spacing:0}
+p{font-size:1.05rem}
+.lead{font-size:clamp(1.05rem,1.4vw,1.2rem);color:var(--steel);max-width:62ch}
+strong{font-weight:700}
+
+/* Container */
+.container{max-width:1280px;margin:0 auto;padding:0 28px}
+@media(min-width:920px){.container{padding:0 56px}}
+
+/* Section base */
+section{padding:96px 0;position:relative}
+@media(max-width:760px){section{padding:64px 0}}
+
+/* Section header pattern: "— LABEL" thin uppercase tag */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:14px;
+  font-family:var(--body);font-weight:700;font-size:.78rem;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--ink);
+  margin-bottom:24px;
+}
+.eyebrow::before{content:"";display:block;width:36px;height:2px;background:var(--ink)}
+
+.section-head{margin-bottom:64px;max-width:820px}
+.section-head h2{margin-bottom:18px}
+
+/* Buttons — square edges, heavy borders */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--body);font-weight:700;font-size:.92rem;
+  letter-spacing:.06em;text-transform:uppercase;
+  padding:18px 28px;border:2px solid var(--ink);
+  transition:transform .15s ease, background-color .15s ease, color .15s ease;
+}
+.btn svg{width:14px;height:14px;flex-shrink:0}
+.btn-primary{background:var(--ember);color:#fff;border-color:var(--ember)}
+.btn-primary:hover{background:var(--ember-dk);border-color:var(--ember-dk);transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--paper);color:var(--ink);transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff;transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ember)}
+.btn-light{background:transparent;color:#fff;border-color:#fff}
+.btn-light:hover{background:#fff;color:var(--ink);transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ember)}
+
+/* Thick horizontal rule motif */
+.rule-hd{height:6px;background:var(--ink);width:100%}
+.rule-thin{height:1px;background:var(--hairline);width:100%}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position:sticky;top:0;z-index:60;
+  background:var(--paper);
+  border-bottom:2px solid var(--ink);
+  transition:box-shadow .2s ease;
+}
+.nav.scrolled{box-shadow:0 6px 0 -2px rgba(0,0,0,.06)}
+.nav-inner{
+  max-width:1280px;margin:0 auto;
+  padding:18px 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+@media(min-width:920px){.nav-inner{padding:18px 56px}}
+
+.brand{display:flex;align-items:center;gap:14px;color:var(--ink)}
+.brand-mark{width:46px;height:46px;color:var(--ink);flex-shrink:0}
+.brand-wordmark{display:none;height:34px;color:var(--ink)}
+@media(min-width:560px){.brand-wordmark{display:block;width:auto}}
+@media(min-width:560px){.brand-text-mobile{display:none}}
+.brand-text-mobile{
+  font-family:var(--display);font-size:.95rem;letter-spacing:-.01em;
+  text-transform:uppercase;line-height:1;
+}
+
+.nav-links{
+  list-style:none;display:flex;align-items:center;gap:36px;
+}
+.nav-links a{
+  font-family:var(--body);font-weight:600;font-size:.92rem;
+  letter-spacing:.04em;color:var(--ink);
+  position:relative;padding:6px 0;
+}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-links a::after{
+  content:"";position:absolute;left:0;right:0;bottom:-4px;
+  height:2px;background:var(--ember);
+  transform:scaleX(0);transform-origin:left;transition:transform .2s ease;
+}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--ink);color:#fff !important;
+  padding:12px 18px;
+  font-weight:700;
+}
+.nav-cta:hover{background:var(--ember)}
+.nav-cta::after{display:none !important}
+
+.nav-toggle{display:none;width:44px;height:44px;align-items:center;justify-content:center;color:var(--ink)}
+.nav-toggle svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2.4}
+
+@media(max-width:880px){
+  .nav-toggle{display:inline-flex}
+  .nav-links{
+    position:absolute;top:100%;left:0;right:0;background:var(--paper);
+    border-bottom:2px solid var(--ink);
+    flex-direction:column;align-items:stretch;gap:0;
+    padding:8px 0;
+    transform-origin:top;
+    transform:scaleY(0);transition:transform .2s ease;
+  }
+  .nav-links.open{transform:scaleY(1)}
+  .nav-links li{border-top:1px solid var(--hairline)}
+  .nav-links a{padding:18px 28px;display:block}
+  .nav-links a::after{display:none}
+  .nav-cta{margin:0;justify-content:center}
+}
+
+/* ============================================================
+   HERO — editorial split
+   ============================================================ */
+.hero{padding:80px 0 0;position:relative;overflow:hidden}
+@media(max-width:760px){.hero{padding:48px 0 0}}
+.hero-grid{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:64px;
+  align-items:end;
+}
+@media(max-width:980px){.hero-grid{grid-template-columns:1fr;gap:40px}}
+
+.hero-tag{
+  display:inline-flex;align-items:center;gap:12px;
+  border:2px solid var(--ink);padding:10px 16px;
+  font-family:var(--body);font-weight:700;font-size:.78rem;
+  letter-spacing:.16em;text-transform:uppercase;
+  margin-bottom:32px;
+}
+.hero-tag .dot{width:9px;height:9px;background:var(--ember);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.55;transform:scale(.85)}
+}
+
+.hero h1{margin-bottom:24px}
+.hero h1 .swap{color:var(--ember)}
+.hero-sub{
+  font-size:clamp(1.05rem,1.4vw,1.2rem);
+  color:var(--steel);max-width:54ch;margin-bottom:36px;line-height:1.55;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:48px}
+
+.hero-img{
+  position:relative;
+  aspect-ratio:4/5;
+  border:3px solid var(--ink);
+  overflow:hidden;
+}
+.hero-img img{width:100%;height:100%;object-fit:cover;filter:contrast(1.04) saturate(.92)}
+.hero-img::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 60%,rgba(10,10,10,.18));
+  pointer-events:none;
+}
+
+/* Hero stat bar — runs full bleed under hero */
+.stat-bar{
+  margin-top:80px;
+  border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);
+  background:var(--ink);color:#fff;
+}
+@media(max-width:760px){.stat-bar{margin-top:48px}}
+.stat-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+@media(max-width:880px){.stat-grid{grid-template-columns:repeat(2,1fr)}}
+.stat{
+  padding:28px 28px;
+  display:flex;flex-direction:column;gap:6px;
+  border-right:1px solid rgba(255,255,255,.18);
+}
+.stat:last-child{border-right:0}
+@media(max-width:880px){
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid rgba(255,255,255,.18)}
+}
+.stat .num{
+  font-family:var(--display);font-size:1.6rem;letter-spacing:-.02em;line-height:1;
+  display:flex;align-items:center;gap:10px;
+}
+.stat .num svg{width:22px;height:22px;color:var(--ember);stroke:currentColor;fill:none;stroke-width:2.2}
+.stat .lbl{
+  font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(255,255,255,.7);font-weight:600;
+}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about{background:var(--paper)}
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+}
+@media(max-width:980px){.about-grid{grid-template-columns:1fr;gap:48px}}
+.about h2{margin-bottom:24px}
+.about p{color:var(--steel);margin-bottom:18px;font-size:1.05rem}
+.about p strong{color:var(--ink)}
+.about-img{position:relative;border:3px solid var(--ink)}
+.about-img img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.about-img::before{
+  content:"";position:absolute;
+  top:18px;left:18px;right:-18px;bottom:-18px;
+  border:3px solid var(--ember);
+  z-index:-1;
+}
+@media(max-width:980px){.about-img::before{display:none}}
+
+.firefighter-mark{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--body);font-weight:700;font-size:.78rem;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ember);margin-bottom:16px;
+}
+.firefighter-mark svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.services{background:var(--bone);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.services-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+  border:3px solid var(--ink);background:var(--ink);
+  margin-top:8px;
+}
+.services-grid > .service-card + .service-card{border-left:3px solid var(--ink)}
+@media(max-width:980px){
+  .services-grid{grid-template-columns:1fr}
+  .services-grid > .service-card + .service-card{border-left:0;border-top:3px solid var(--ink)}
+}
+
+.service-card{
+  background:var(--paper);
+  padding:48px 36px;
+  display:flex;flex-direction:column;gap:18px;
+  transition:background .18s ease, color .18s ease;
+}
+.service-card:hover{background:var(--ink);color:#fff}
+.service-card:hover .svc-num{color:var(--ember)}
+.service-card:hover .svc-list li::before{background:var(--ember)}
+.service-card:hover .svc-arrow{color:var(--ember);transform:translateX(6px)}
+
+.svc-num{
+  font-family:var(--display);font-size:2.2rem;line-height:1;letter-spacing:-.02em;
+  color:var(--ink);transition:color .18s ease;
+}
+.service-card h3{margin-top:8px}
+.service-card > p{font-size:.98rem;line-height:1.55;opacity:.85}
+.svc-list{list-style:none;margin-top:6px;display:flex;flex-direction:column;gap:8px}
+.svc-list li{
+  position:relative;padding-left:22px;font-size:.93rem;
+}
+.svc-list li::before{
+  content:"";position:absolute;left:0;top:9px;width:12px;height:2px;
+  background:var(--ink);transition:background .18s ease;
+}
+.svc-arrow{
+  margin-top:auto;display:inline-flex;align-items:center;gap:8px;
+  font-weight:700;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;
+  transition:color .18s ease, transform .18s ease;
+}
+.svc-arrow svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.4}
+
+/* ============================================================
+   GALLERY
+   ============================================================ */
+.gallery{background:var(--paper)}
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(12,1fr);gap:14px;
+}
+.gallery-item{
+  position:relative;overflow:hidden;
+  border:2px solid var(--ink);
+  cursor:pointer;
+  background:var(--bone);
+}
+.gallery-item img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .5s ease;
+}
+.gallery-item:hover img{transform:scale(1.04)}
+.gallery-item .caption{
+  position:absolute;left:0;right:0;bottom:0;
+  background:var(--ink);color:#fff;
+  padding:14px 18px;
+  font-family:var(--body);font-weight:700;font-size:.82rem;
+  letter-spacing:.1em;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  transform:translateY(100%);transition:transform .25s ease;
+}
+.gallery-item:hover .caption{transform:translateY(0)}
+.gallery-item .caption::after{
+  content:"";display:block;width:14px;height:14px;
+  background:var(--ember);
+  flex-shrink:0;
+}
+
+/* Asymmetric grid sizing */
+.gi-lg{grid-column:span 8;aspect-ratio:16/10}
+.gi-md{grid-column:span 4;aspect-ratio:4/5}
+.gi-sm{grid-column:span 4;aspect-ratio:1/1}
+@media(max-width:980px){
+  .gi-lg{grid-column:span 12;aspect-ratio:16/10}
+  .gi-md{grid-column:span 6;aspect-ratio:4/5}
+  .gi-sm{grid-column:span 6;aspect-ratio:1/1}
+}
+@media(max-width:560px){
+  .gi-lg,.gi-md,.gi-sm{grid-column:span 12;aspect-ratio:4/3}
+}
+
+/* Lightbox */
+.lightbox{
+  position:fixed;inset:0;z-index:90;
+  background:rgba(10,10,10,.95);
+  display:none;align-items:center;justify-content:center;padding:24px;
+}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:88vh;border:3px solid #fff}
+.lightbox-close{
+  position:absolute;top:24px;right:24px;
+  width:48px;height:48px;
+  background:#fff;color:var(--ink);font-size:2rem;line-height:1;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ============================================================
+   WHY MTJ
+   ============================================================ */
+.why{background:var(--ink);color:#fff;border-top:3px solid var(--ink)}
+.why .eyebrow{color:#fff}
+.why .eyebrow::before{background:var(--ember)}
+.why h2{color:#fff}
+.why .lead{color:rgba(255,255,255,.72)}
+
+.pillars{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  border-top:1px solid rgba(255,255,255,.2);
+  border-left:1px solid rgba(255,255,255,.2);
+}
+@media(max-width:980px){.pillars{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.pillars{grid-template-columns:1fr}}
+.pillar{
+  padding:36px 28px;
+  border-right:1px solid rgba(255,255,255,.2);
+  border-bottom:1px solid rgba(255,255,255,.2);
+  display:flex;flex-direction:column;gap:14px;
+  transition:background .18s ease;
+}
+.pillar:hover{background:rgba(255,90,31,.08)}
+.pillar-num{
+  font-family:var(--display);font-size:3rem;line-height:1;
+  color:var(--ember);letter-spacing:-.02em;
+}
+.pillar h4{font-size:1.05rem;letter-spacing:.04em;color:#fff}
+.pillar p{font-size:.95rem;color:rgba(255,255,255,.72);line-height:1.55}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+.contact{background:var(--bone)}
+.contact-grid{
+  display:grid;grid-template-columns:.7fr 1.3fr;gap:56px;
+  align-items:start;
+}
+@media(max-width:980px){.contact-grid{grid-template-columns:1fr;gap:40px}}
+
+.contact-info{
+  background:var(--ink);color:#fff;
+  padding:40px 36px;
+  display:flex;flex-direction:column;gap:24px;
+  border:3px solid var(--ink);
+  position:relative;
+}
+.contact-info h3{font-size:1.4rem;color:#fff;margin-bottom:6px}
+.contact-info .lead-sm{font-size:.95rem;color:rgba(255,255,255,.72);margin-bottom:8px}
+.contact-item{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-top:1px solid rgba(255,255,255,.18)}
+.contact-item:nth-of-type(2){border-top:0;padding-top:0}
+.contact-item .ico{
+  width:38px;height:38px;flex-shrink:0;
+  display:inline-flex;align-items:center;justify-content:center;
+  border:2px solid var(--ember);color:var(--ember);
+}
+.contact-item .ico svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2}
+.contact-item .lbl{
+  display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(255,255,255,.55);font-weight:700;margin-bottom:3px;
+}
+.contact-item a, .contact-item span{color:#fff;font-weight:600;font-size:1rem;word-break:break-word}
+.contact-item a:hover{color:var(--ember)}
+
+.contact-form{
+  display:flex;flex-direction:column;gap:18px;
+  background:var(--paper);border:3px solid var(--ink);padding:36px;
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:600px){.form-row{grid-template-columns:1fr}}
+.form-field{display:flex;flex-direction:column;gap:7px}
+.form-field.full{grid-column:1/-1}
+.form-field label{
+  font-family:var(--body);font-weight:700;font-size:.78rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink);
+}
+.form-field input,
+.form-field select,
+.form-field textarea{
+  font:inherit;font-size:1rem;color:var(--ink);
+  background:var(--paper);
+  border:2px solid var(--ink);
+  padding:14px 16px;
+  width:100%;border-radius:0;
+  transition:border-color .15s ease;
+}
+.form-field textarea{min-height:140px;resize:vertical;font-family:var(--body)}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus{
+  outline:none;border-color:var(--ember);
+}
+.form-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:8px}
+.form-status{
+  font-size:.92rem;color:var(--ember);font-weight:600;
+  display:none;
+}
+.form-status.show{display:block}
+.form-foot{font-size:.85rem;color:var(--steel);margin-top:6px}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{background:var(--ink);color:#fff;padding:48px 0 28px;border-top:3px solid var(--ember)}
+.footer-inner{
+  max-width:1280px;margin:0 auto;padding:0 28px;
+  display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;align-items:start;
+}
+@media(min-width:920px){.footer-inner{padding:0 56px}}
+@media(max-width:760px){.footer-inner{grid-template-columns:1fr;gap:32px}}
+.footer-brand-mark{width:auto;height:60px;color:#fff;margin-bottom:16px;display:block}
+.footer-blurb{color:rgba(255,255,255,.7);font-size:.95rem;max-width:42ch;line-height:1.55}
+.footer-h{
+  font-family:var(--display);font-size:.95rem;text-transform:uppercase;
+  letter-spacing:.04em;margin-bottom:14px;
+}
+.footer-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.footer-list a, .footer-list span{
+  color:rgba(255,255,255,.78);font-size:.95rem;font-weight:500;
+}
+.footer-list a:hover{color:var(--ember)}
+.footer-bottom{
+  max-width:1280px;margin:32px auto 0;padding:24px 28px 0;
+  border-top:1px solid rgba(255,255,255,.18);
+  font-size:.82rem;color:rgba(255,255,255,.55);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
+}
+@media(min-width:920px){.footer-bottom{padding:24px 56px 0}}
+
+/* Floating mobile call button */
+.float-call{
+  position:fixed;bottom:18px;right:18px;z-index:50;
+  display:none;align-items:center;gap:8px;
+  background:var(--ember);color:#fff;
+  padding:14px 20px;
+  font-family:var(--body);font-weight:700;font-size:.88rem;
+  letter-spacing:.06em;text-transform:uppercase;
+  border:2px solid var(--ink);
+  box-shadow:5px 5px 0 var(--ink);
+}
+.float-call svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2}
+@media(max-width:880px){.float-call{display:inline-flex}}
+
+/* Reveal-on-scroll */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<!-- ==========================  NAV  ========================== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="MTJ Welding & Fabrication — Home">
+      <!-- Wordmark on desktop, icon-only on mobile -->
+      <svg class="brand-wordmark" viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g>
+          <circle cx="130" cy="130" r="118" fill="none" stroke="currentColor" stroke-width="9"/>
+          <rect x="64" y="78" width="86" height="17" fill="currentColor"/>
+          <text x="130" y="195" font-family="'Archivo Black', system-ui, sans-serif" font-size="124" font-weight="900" text-anchor="middle" fill="currentColor" letter-spacing="-4">MJ</text>
+        </g>
+        <g font-family="'Archivo Black', system-ui, sans-serif" font-weight="900" fill="currentColor" letter-spacing="-1.5">
+          <text x="290" y="115" font-size="74">WELDING &amp;</text>
+          <text x="290" y="195" font-size="74">FABRICATION</text>
+        </g>
+      </svg>
+      <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none">
+        <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="7"/>
+        <rect x="40" y="60" width="68" height="13" fill="currentColor"/>
+        <text x="100" y="151" font-family="'Archivo Black', system-ui, sans-serif" font-size="96" font-weight="900" text-anchor="middle" fill="currentColor" letter-spacing="-3">MJ</text>
+      </svg>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#why">Why MTJ</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav-cta" href="tel:18015665412">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.8 12.8 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.8 12.8 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        801-566-5412
+      </a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ==========================  HERO  ========================== -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-tag">
+          <span class="dot"></span>
+          Firefighter-Owned · Salt Lake City
+        </span>
+        <h1>Steel That<br>Holds the Line.<br><span class="swap">Built by Hand.</span></h1>
+        <p class="hero-sub">Custom handrails, gates, and fabrication. Mobile welding repair across the Salt Lake Valley. Authorized LiftMaster gate operator sales &amp; install.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            Request a Quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#work" class="btn btn-ghost">See the Work</a>
+        </div>
+      </div>
+      <div class="hero-img reveal">
+        <img src="images/IMG_8857.jpg" alt="Custom black steel driveway gate fabricated and installed by MTJ Welding in Salt Lake City" />
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-bar">
+    <div class="container">
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="num">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            SLC + Valley
+          </div>
+          <div class="lbl">Service Area</div>
+        </div>
+        <div class="stat">
+          <div class="num">
+            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            Mobile Repair
+          </div>
+          <div class="lbl">Come to You</div>
+        </div>
+        <div class="stat">
+          <div class="num">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            1-Day Reply
+          </div>
+          <div class="lbl">Quote Turnaround</div>
+        </div>
+        <div class="stat">
+          <div class="num">
+            <svg viewBox="0 0 24 24"><path d="M12 2s4 4 4 8a4 4 0 0 1-8 0c0-1 .5-2 1-3-1 1-3 4-3 7a6 6 0 0 0 12 0c0-5-6-12-6-12z"/></svg>
+            Trade-Built
+          </div>
+          <div class="lbl">By a Working Firefighter</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ==========================  ABOUT  ========================== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="firefighter-mark">
+          <svg viewBox="0 0 24 24"><path d="M12 2s4 4 4 8a4 4 0 0 1-8 0c0-1 .5-2 1-3-1 1-3 4-3 7a6 6 0 0 0 12 0c0-5-6-12-6-12z"/></svg>
+          Firefighter-Owned &amp; Operated
+        </span>
+        <h2>Built by a Tradesman.<br>Trusted by Neighbors.</h2>
+        <p>MTJ Welding &amp; Fabrication is a Salt Lake City steel shop run by a working firefighter — on duty when the call comes in, in the shop the rest of the time, building metalwork that holds up for decades.</p>
+        <p>Every handrail, gate, and weld leaves the shop the way I'd put it on my own home: <strong>square, clean, and built to last.</strong> No shortcuts, no excuses.</p>
+        <p>From custom residential railings to large-scale fabrication and roadside repairs, MTJ brings the same discipline you'd expect from the fire service to every job.</p>
+      </div>
+      <div class="about-img reveal">
+        <img src="images/IMG_7394.jpg" alt="MTJ Welding shop interior — fabricating long custom steel railing panels in Salt Lake City" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================  SERVICES  ========================== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What We Do</span>
+      <h2>Three Services.<br>One Standard.</h2>
+      <p class="lead">Custom steel work, mobile repairs, and motorized gate systems — all fabricated and serviced by hand at our SLC shop.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Service 1 -->
+      <div class="service-card reveal">
+        <div class="svc-num">01</div>
+        <h3>Custom Fabrication</h3>
+        <p>Built-to-spec handrails, gates, and structural steel. From residential porches to commercial enclosures — designed, fabricated, and finished in-house.</p>
+        <ul class="svc-list">
+          <li>Iron &amp; steel handrails</li>
+          <li>Driveway &amp; pedestrian gates</li>
+          <li>Fences, railings &amp; guardrails</li>
+          <li>Custom steel products</li>
+        </ul>
+        <a href="#contact" class="svc-arrow">Get a Quote
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card reveal">
+        <div class="svc-num">02</div>
+        <h3>Mobile Welding Repair</h3>
+        <p>On-site welding when you can't bring it to the shop. Trailer, gate, and railing repairs across the Salt Lake Valley — we come to you.</p>
+        <ul class="svc-list">
+          <li>Gate &amp; handrail repairs</li>
+          <li>Trailer &amp; equipment welding</li>
+          <li>Emergency &amp; same-day options</li>
+          <li>Honest assessments, no upsells</li>
+        </ul>
+        <a href="#contact" class="svc-arrow">Call Us Out
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card reveal">
+        <div class="svc-num">03</div>
+        <h3>LiftMaster Gate Operators</h3>
+        <p>Authorized sales &amp; installation of LiftMaster swing and sliding operators. Reliable automation paired with shop-built gates that fit perfectly.</p>
+        <ul class="svc-list">
+          <li>Swing gate operators</li>
+          <li>Sliding gate operators</li>
+          <li>Gate &amp; operator combo packages</li>
+          <li>Repairs &amp; service calls</li>
+        </ul>
+        <a href="#contact" class="svc-arrow">Spec a System
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================  GALLERY  ========================== -->
+<section class="gallery" id="work">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Selected Work</span>
+      <h2>From the Shop<br>&amp; the Job Site.</h2>
+      <p class="lead">Recent projects across Salt Lake City — gates, handrails, and on-site repairs.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gi-lg">
+        <img src="images/IMG_8857.jpg" alt="Custom black steel driveway swing gate, Salt Lake City" loading="lazy" />
+        <div class="caption"><span>Custom Driveway Swing Gate</span></div>
+      </div>
+      <div class="gallery-item gi-md">
+        <img src="images/IMG_8838.jpg" alt="Black wrought-iron driveway gate at colonial home" loading="lazy" />
+        <div class="caption"><span>Residential Driveway Gate</span></div>
+      </div>
+      <div class="gallery-item gi-sm">
+        <img src="images/IMG_8472.jpg" alt="Black steel handrail on brick home stoop" loading="lazy" />
+        <div class="caption"><span>Brick-Front Handrail</span></div>
+      </div>
+      <div class="gallery-item gi-md">
+        <img src="images/IMG_8775.jpg" alt="Bronze wrought-iron porch handrails on craftsman bungalow" loading="lazy" />
+        <div class="caption"><span>Craftsman Porch Railings</span></div>
+      </div>
+      <div class="gallery-item gi-md">
+        <img src="images/IMG_8778.jpg" alt="Front porch handrails with mountain backdrop" loading="lazy" />
+        <div class="caption"><span>Bungalow Porch Build</span></div>
+      </div>
+      <div class="gallery-item gi-md">
+        <img src="images/IMG_8781.jpg" alt="Completed porch handrail install on bungalow" loading="lazy" />
+        <div class="caption"><span>Front Entry Railings</span></div>
+      </div>
+      <div class="gallery-item gi-md">
+        <img src="images/IMG_7395.jpg" alt="Pedestrian steel gate fabricated in shop" loading="lazy" />
+        <div class="caption"><span>Pedestrian Gate Build</span></div>
+      </div>
+      <div class="gallery-item gi-md">
+        <img src="images/IMG_7394.jpg" alt="Long steel railing panels under fabrication in shop" loading="lazy" />
+        <div class="caption"><span>Shop Fabrication</span></div>
+      </div>
+      <div class="gallery-item gi-sm">
+        <img src="images/IMG_8740.jpg" alt="Mobile welding repair — trailer axle spindle weld" loading="lazy" />
+        <div class="caption"><span>Mobile Trailer Repair</span></div>
+      </div>
+      <div class="gallery-item gi-sm">
+        <img src="images/IMG_7542.jpg" alt="Trailer hitch / tongue welding repair on-site" loading="lazy" />
+        <div class="caption"><span>On-Site Hitch Repair</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<!-- ==========================  WHY MTJ  ========================== -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The MTJ Difference</span>
+      <h2>Why Homeowners &amp;<br>Contractors Choose Us.</h2>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar reveal">
+        <div class="pillar-num">01</div>
+        <h4>Firefighter Discipline</h4>
+        <p>The same standards I bring to a fire scene — preparation, accountability, follow-through — go into every weld.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-num">02</div>
+        <h4>Built In-House</h4>
+        <p>Every project is fabricated by hand at our SLC shop. No outsourcing, no surprises.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-num">03</div>
+        <h4>Mobile When You Need It</h4>
+        <p>Broken gate, busted trailer, sagging handrail? We bring the shop to you, anywhere in the SLC area.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-num">04</div>
+        <h4>Honest Pricing</h4>
+        <p>Clear quotes, no hidden fees, and a straight answer if it's not the right job for us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================  CONTACT  ========================== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Get in Touch</span>
+      <h2>Request a Quote.</h2>
+      <p class="lead">Tell us about your project — handrail, gate, repair, or operator install. We'll get back within one business day.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Info column (dark card) -->
+      <div class="contact-info">
+        <h3>Reach Out</h3>
+        <p class="lead-sm">Fastest response is by phone or text.</p>
+
+        <div class="contact-item">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.8 12.8 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.8 12.8 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <span class="lbl">Call or Text</span>
+            <a href="tel:18015665412">801-566-5412</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div>
+            <span class="lbl">Email</span>
+            <a href="mailto:mtjwelding@gmail.com">mtjwelding@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+          <div>
+            <span class="lbl">Instagram</span>
+            <a href="https://instagram.com/mtj_welding" target="_blank" rel="noopener">@mtj_welding</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <span class="lbl">Service Area</span>
+            <span>Salt Lake City &amp; Surrounding Areas</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div>
+            <span class="lbl">Hours</span>
+            <span>By appointment · Mon – Sat</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form class="contact-form" id="quoteForm"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Your Name</label>
+            <input id="name" name="name" type="text" required placeholder="Jane Doe" />
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required placeholder="801-555-0123" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field full">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field full">
+            <label for="service">What can we help with?</label>
+            <select id="service" name="service" required>
+              <option value="">— Select a service —</option>
+              <option>Custom Fabrication (handrail, gate, etc.)</option>
+              <option>Mobile / On-Site Welding Repair</option>
+              <option>LiftMaster Gate Operator (Sales / Install)</option>
+              <option>Other / Not Sure Yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field full">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" required placeholder="Brief description, location, any photos you can share via email..."></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">
+            Send Request
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <span class="form-foot">Or call <a href="tel:18015665412" style="color:var(--ink);font-weight:700">801-566-5412</a></span>
+        </div>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================  FOOTER  ========================== -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <svg class="footer-brand-mark" viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g>
+          <circle cx="130" cy="130" r="118" fill="none" stroke="currentColor" stroke-width="9"/>
+          <rect x="64" y="78" width="86" height="17" fill="currentColor"/>
+          <text x="130" y="195" font-family="'Archivo Black', system-ui, sans-serif" font-size="124" font-weight="900" text-anchor="middle" fill="currentColor" letter-spacing="-4">MJ</text>
+        </g>
+        <g font-family="'Archivo Black', system-ui, sans-serif" font-weight="900" fill="currentColor" letter-spacing="-1.5">
+          <text x="290" y="115" font-size="74">WELDING &amp;</text>
+          <text x="290" y="195" font-size="74">FABRICATION</text>
+        </g>
+      </svg>
+      <p class="footer-blurb">Firefighter-owned steel fabrication, mobile welding, and LiftMaster gate operator install. Salt Lake City &amp; surrounding areas.</p>
+    </div>
+
+    <div>
+      <div class="footer-h">Contact</div>
+      <ul class="footer-list">
+        <li><a href="tel:18015665412">801-566-5412</a></li>
+        <li><a href="mailto:mtjwelding@gmail.com">mtjwelding@gmail.com</a></li>
+        <li><a href="https://instagram.com/mtj_welding" target="_blank" rel="noopener">@mtj_welding</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-h">Sitemap</div>
+      <ul class="footer-list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#why">Why MTJ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> MTJ Welding &amp; Fabrication · Salt Lake City, Utah</span>
+    <span>Firefighter-Owned · Built by Hand</span>
+  </div>
+</footer>
+
+<!-- Floating mobile call button -->
+<a href="tel:18015665412" class="float-call" aria-label="Call MTJ Welding">
+  <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.8 12.8 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.8 12.8 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  Call Now
+</a>
+
+<script>
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Sticky nav shadow
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 8);
+});
+
+// Show wordmark or icon-only based on screen width
+function syncBrand() {
+  const wm = document.querySelector('.brand-wordmark');
+  const mk = document.querySelector('.brand-mark');
+  if (window.innerWidth < 560) {
+    wm.style.display = 'none';
+    mk.style.display = 'block';
+  } else {
+    wm.style.display = 'block';
+    mk.style.display = 'none';
+  }
+}
+syncBrand();
+window.addEventListener('resize', syncBrand);
+
+// Mobile menu toggle
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a =>
+  a.addEventListener('click', () => navLinks.classList.remove('open'))
+);
+
+// Lightbox
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lightboxImg');
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const img = item.querySelector('img');
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lb.classList.add('open');
+  });
+});
+function closeLB(){ lb.classList.remove('open'); lbImg.src=''; }
+lb.querySelector('.lightbox-close').addEventListener('click', closeLB);
+lb.addEventListener('click', e => { if (e.target === lb) closeLB(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLB(); });
+
+// Reveal-on-scroll
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(en => { if (en.isIntersecting) en.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Formspree AJAX submission with graceful fallback if YOUR_FORM_ID still present
+const form = document.getElementById('quoteForm');
+const status = document.getElementById('formStatus');
+form.addEventListener('submit', async (e) => {
+  if (form.action.includes('YOUR_FORM_ID')) {
+    e.preventDefault();
+    status.textContent = "Form not yet connected. Please email mtjwelding@gmail.com or call 801-566-5412.";
+    status.classList.add('show');
+    return;
+  }
+  e.preventDefault();
+  status.textContent = "Sending…";
+  status.classList.add('show');
+  try {
+    const data = new FormData(form);
+    const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+    if (res.ok) {
+      status.textContent = "Thanks — your request was sent. We'll be in touch shortly.";
+      form.reset();
+    } else {
+      status.textContent = "Something went wrong. Please call 801-566-5412 or email mtjwelding@gmail.com.";
+    }
+  } catch (err) {
+    status.textContent = "Network error. Please call 801-566-5412 or email mtjwelding@gmail.com.";
+  }
+});
+</script>
+
+</body>
+</html>

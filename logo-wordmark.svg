@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="MTJ monogram">
+  <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="7"/>
+  <rect x="40" y="60" width="68" height="13" fill="currentColor"/>
+  <text x="100" y="151" font-family="'Archivo Black', system-ui, sans-serif" font-size="96" font-weight="900" text-anchor="middle" fill="currentColor" letter-spacing="-3">MJ</text>
+</svg>
