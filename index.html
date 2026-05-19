@@ -123,14 +123,9 @@ section{padding:96px 0;position:relative}
 @media(min-width:920px){.nav-inner{padding:18px 56px}}
 
 .brand{display:flex;align-items:center;gap:14px;color:var(--ink)}
-.brand-mark{width:46px;height:46px;color:var(--ink);flex-shrink:0}
-.brand-wordmark{display:none;height:34px;color:var(--ink)}
-@media(min-width:560px){.brand-wordmark{display:block;width:auto}}
-@media(min-width:560px){.brand-text-mobile{display:none}}
-.brand-text-mobile{
-  font-family:var(--display);font-size:.95rem;letter-spacing:-.01em;
-  text-transform:uppercase;line-height:1;
-}
+.brand-mark{width:46px;height:46px;flex-shrink:0;display:block}
+.brand-wordmark{display:none;height:42px;width:auto}
+@media(min-width:560px){.brand-wordmark{display:block}}
 
 .nav-links{
   list-style:none;display:flex;align-items:center;gap:36px;
@@ -500,7 +495,7 @@ footer{background:var(--ink);color:#fff;padding:48px 0 28px;border-top:3px solid
 }
 @media(min-width:920px){.footer-inner{padding:0 56px}}
 @media(max-width:760px){.footer-inner{grid-template-columns:1fr;gap:32px}}
-.footer-brand-mark{width:auto;height:60px;color:#fff;margin-bottom:16px;display:block}
+.footer-brand-mark{width:auto;height:72px;margin-bottom:18px;display:block;filter:invert(1) brightness(1.1)}
 .footer-blurb{color:rgba(255,255,255,.7);font-size:.95rem;max-width:42ch;line-height:1.55}
 .footer-h{
   font-family:var(--display);font-size:.95rem;text-transform:uppercase;
@@ -545,22 +540,8 @@ footer{background:var(--ink);color:#fff;padding:48px 0 28px;border-top:3px solid
   <div class="nav-inner">
     <a href="#top" class="brand" aria-label="MTJ Welding & Fabrication — Home">
       <!-- Wordmark on desktop, icon-only on mobile -->
-      <svg class="brand-wordmark" viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g>
-          <circle cx="130" cy="130" r="118" fill="none" stroke="currentColor" stroke-width="9"/>
-          <rect x="64" y="78" width="86" height="17" fill="currentColor"/>
-          <text x="130" y="195" font-family="'Archivo Black', system-ui, sans-serif" font-size="124" font-weight="900" text-anchor="middle" fill="currentColor" letter-spacing="-4">MJ</text>
-        </g>
-        <g font-family="'Archivo Black', system-ui, sans-serif" font-weight="900" fill="currentColor" letter-spacing="-1.5">
-          <text x="290" y="115" font-size="74">WELDING &amp;</text>
-          <text x="290" y="195" font-size="74">FABRICATION</text>
-        </g>
-      </svg>
-      <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none">
-        <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="7"/>
-        <rect x="40" y="60" width="68" height="13" fill="currentColor"/>
-        <text x="100" y="151" font-family="'Archivo Black', system-ui, sans-serif" font-size="96" font-weight="900" text-anchor="middle" fill="currentColor" letter-spacing="-3">MJ</text>
-      </svg>
+      <img class="brand-wordmark" src="images/logo-wordmark.svg" alt="MTJ Welding & Fabrication" />
+      <img class="brand-mark" src="images/logo-icon.svg" alt="MTJ" style="display:none" />
     </a>
 
     <ul class="nav-links" id="navLinks">
@@ -590,7 +571,7 @@ footer{background:var(--ink);color:#fff;padding:48px 0 28px;border-top:3px solid
           Firefighter-Owned · Salt Lake City
         </span>
         <h1>Steel That<br>Holds the Line.<br><span class="swap">Built by Hand.</span></h1>
-        <p class="hero-sub">Proudly serving northern Utah — from Salt Lake City to the Cache Valley and everywhere in between with custom handrails, gates, and fabrication. Mobile welding repair. Authorized LiftMaster gate operator sales &amp; install.</p>
+        <p class="hero-sub">Custom handrails, gates, and fabrication. Mobile welding repair across the Salt Lake Valley. Authorized LiftMaster gate operator sales &amp; install.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">
             Request a Quote
@@ -931,17 +912,7 @@ footer{background:var(--ink);color:#fff;padding:48px 0 28px;border-top:3px solid
 <footer>
   <div class="footer-inner">
     <div>
-      <svg class="footer-brand-mark" viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g>
-          <circle cx="130" cy="130" r="118" fill="none" stroke="currentColor" stroke-width="9"/>
-          <rect x="64" y="78" width="86" height="17" fill="currentColor"/>
-          <text x="130" y="195" font-family="'Archivo Black', system-ui, sans-serif" font-size="124" font-weight="900" text-anchor="middle" fill="currentColor" letter-spacing="-4">MJ</text>
-        </g>
-        <g font-family="'Archivo Black', system-ui, sans-serif" font-weight="900" fill="currentColor" letter-spacing="-1.5">
-          <text x="290" y="115" font-size="74">WELDING &amp;</text>
-          <text x="290" y="195" font-size="74">FABRICATION</text>
-        </g>
-      </svg>
+      <img class="footer-brand-mark" src="images/logo-wordmark.svg" alt="MTJ Welding & Fabrication" />
       <p class="footer-blurb">Firefighter-owned steel fabrication, mobile welding, and LiftMaster gate operator install. Salt Lake City &amp; surrounding areas.</p>
     </div>
 
